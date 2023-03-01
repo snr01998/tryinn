@@ -3,13 +3,11 @@
     require_once "inc/config.php";
    
 ?>
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-
 <html>
     <head>
         <meta charset="utf-8">
@@ -25,16 +23,31 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <h1>Registeration</h1>
         <div form="uk-section uk-container">
-            <?php
-             echo "as toady is :";
-             echo date("Y m d");
-            ?>
-            <p>
-        <a href="login.php">login</a>
-        <a href="registeration.php">registeration</a>
-</p>
+            <div class="uk-grid uk-child-width-l-3@s uk-child-width-l-l" uk-grid="">
+        <form class="uk-form-stacked js-register">
+    <div class="uk-margin ">
+        <label class="uk-form-label" for="form-stacked-text">email</label>
+        <div class="uk-form-controls">…
+            <input class="uk-input" id="form-stacked-text" type="email" placeholder="emails" required='required'/>
+        </div>
+    </div>
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">password</label>
+        <div class="uk-form-controls">
+        <input class="uk-input" id="form-stacked-text" type="password" placeholder="password" required='required'/>
+        </div>
+    </div>
+    
+    <div class="uk-margin">
+        <button class="uk-button-default" type="submit">registeration</button>
+    </div>
+
+
+    </form>
+    </div>
     </div>        
-       <?php require_once "inc/footer.php";?>
+    <?php require_once "inc/footer.php";?>
     </body>
 </html>
